@@ -1,0 +1,105 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TO-DO LIST"
+        android:textSize="24sp"
+        android:textColor="#FFA500"
+        android:fontFamily="TIMES NEW ROMAN"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.049" />
+
+
+
+
+    <EditText
+        android:id="@+id/taskNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:hint="Enter task name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/taskDescEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter task description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/taskNameEditText" />
+
+    <Button
+        android:id="@+id/chooseDateButton"
+        android:layout_width="192dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Choose Due Date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/taskDescEditText" />
+
+    <TextView
+        android:id="@+id/dueDateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Due Date: Not set"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/chooseDateButton" />
+
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="160dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="236dp"
+        android:layout_marginTop="84dp"
+        android:onClick="onAddTaskButtonClick"
+        android:text="Add Task"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/taskDescEditText" />
+
+    <Button
+        android:id="@+id/chooseStatusButton"
+        android:layout_width="160dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:text="Choose Status"
+        app:layout_constraintStart_toEndOf="@+id/chooseDateButton"
+        app:layout_constraintTop_toBottomOf="@+id/taskDescEditText" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/addButton" />
+
+    <Button
+        android:id="@+id/choosePriorityButton"
+        android:layout_width="189dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="84dp"
+        android:text="Choose Priority"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/taskDescEditText" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
