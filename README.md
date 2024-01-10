@@ -6,16 +6,19 @@ Description
 A simple Android app for managing tasks and to-dos. That contain the due-date,priority list and aslo the status as well.
 
 Features
+
 Add tasks with name, description, due date, status, and priority.
 View added tasks in a list.
 Delete tasks from the list.
 
 Installation
+
 Clone the repository: git clone 
 Open the project in Android Studio.
 Build and run the app on an Android device or emulator.
 
 Usage
+
 Launch the app on your Android device.
 Enter the task name and description.
 Choose the due date, status, and priority for the task.
